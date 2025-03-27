@@ -76,7 +76,7 @@ function Home() {
 
         <>
             <div className="Paises">
-                <p>Kawaii</p>
+                <h1>Kawaii</h1>
 
                 <section>
                     <select
