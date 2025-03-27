@@ -7,7 +7,7 @@
 
 nav{
   text-align: center;
-  background-color: darkcyan;
+  background-color: rgb(0, 0, 0);
   padding: 0;
   border-radius: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0 , 0.2);
@@ -33,7 +33,7 @@ nav{
 }
 
 .Paises {
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
   padding: 2em;
   border-radius: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0 , 0.2);
@@ -51,15 +51,17 @@ nav{
     padding: 1em;
     border-radius: 5em 0 0 5em;
     border: none;
-    background-color: darkgoldenrod;
+    background-color: rgb(199, 199, 199);
     height: auto;
+    color:black;
+    
   }
   
   input{
     padding: 1em;
     border-radius: 0 5em 5em 0;
     border: none;
-    background-color: darkcyan;
+    background-color: rgb(0, 0, 0);
     height: auto;
   }
 
@@ -67,6 +69,7 @@ nav{
 img {
   transition: 4s;
   border-radius: 1em;
+  max-width: 30vw;
 }
 
 img:hover {
@@ -84,8 +87,9 @@ img:hover {
 }
 
 .button{
-  background-color: darkcyan;
+  background-color: rgb(76, 196, 236);
   border-radius: 2em;
   border: darkblue;
   margin: 1em;
+  
 }
