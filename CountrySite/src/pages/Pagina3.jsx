@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function PaginaOne() {
+function PaginaThree() {
     const [paisEspecifico] = useState(() => {
         const SalvarPais = window.localStorage.getItem('Pais Específico Salvo');
         return SalvarPais ? JSON.parse(SalvarPais) : [];
@@ -14,7 +14,7 @@ function PaginaOne() {
                 <div key={dadosDosPaises.latlng}>
                     <h2>{dadosDosPaises.name.common}</h2>
                     <img src={dadosDosPaises.flags.png} alt={dadosDosPaises.name.common} />
-                    <p>Area: {dadosDosPaises.area}km²</p>
+                    <p> Capital: {dadosDosPaises.capital}</p>
                 </div>
             )
         })}
@@ -22,4 +22,4 @@ function PaginaOne() {
     </div>
 )}
 
-export default PaginaOne
+export default PaginaThree;

@@ -5,6 +5,33 @@
   text-align: center;
 }
 
+nav{
+  text-align: center;
+  background-color: darkcyan;
+  padding: 0;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0 , 0.2);
+
+  ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  li{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 1em;
+  }
+}
+
 .Paises {
   background-color: antiquewhite;
   padding: 2em;
