@@ -108,7 +108,7 @@ function Home() {
                 <div className="PaisEspecifico">
                     {paisEspecificoOrdenado.map((dadosDosPaises) => {
                         return (
-                            <button key={dadosDosPaises.latlng} onClick={(e) => setNomePaisEspecifico(dadosDosPaises.name.official)} className="button">
+                            <button key={dadosDosPaises.latlng} onClick={() => setNomePaisEspecifico(dadosDosPaises.name.official)} className="button">
                                 <h2>{dadosDosPaises.name.common}</h2>
                                 <img src={dadosDosPaises.flags.png} alt={dadosDosPaises.name.common} />
                             </button>
