@@ -5,38 +5,60 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
+.Paises {
+  background-color: antiquewhite;
   padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0 , 0.2);
+  margin: 2em;
+  text-align: center;
+  color: darkblue;
+
+  section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  select{
+    padding: 1em;
+    border-radius: 5em 0 0 5em;
+    border: none;
+    background-color: darkgoldenrod;
+    height: auto;
+  }
+  
+  input{
+    padding: 1em;
+    border-radius: 0 5em 5em 0;
+    border: none;
+    background-color: darkcyan;
+    height: auto;
+  }
+
+}
+img {
+  transition: 4s;
+  border-radius: 1em;
 }
 
-.read-the-docs {
-  color: #888;
+img:hover {
+  transform: rotateX(360deg);
+  transition: 1s;
+}
+
+.PaisEspecifico{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 2em;
+
+}
+
+.button{
+  background-color: darkcyan;
+  border-radius: 2em;
+  border: darkblue;
+  margin: 1em;
 }
