@@ -33,6 +33,8 @@ nav{
 }
 
 .Paises {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 255, 255);
   padding: 2em;
   border-radius: 1em;

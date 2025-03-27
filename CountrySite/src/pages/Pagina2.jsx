@@ -8,7 +8,6 @@ function PaginaTwo() {
 
     return( 
         <div className="Paises">
-    <section>
         {paisEspecifico.map((dadosDosPaises) => {
             return (
                 <div key={dadosDosPaises.latlng}>
@@ -20,7 +19,6 @@ function PaginaTwo() {
                 </div>
             )
         })}
-    </section>
     </div>
 )}
 
