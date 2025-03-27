@@ -33,13 +33,16 @@ nav{
 }
 
 .Paises {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(228, 224, 224);
   padding: 2em;
   border-radius: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0 , 0.2);
   margin: 2em;
   text-align: center;
-  color: darkblue;
+  color: rgb(0, 0, 0);
+  h1{
+    color: darkblue;
+  }
 
   section{
     display: flex;
@@ -88,9 +91,10 @@ img:hover {
 }
 
 .button{
-  background-color: rgb(76, 196, 236);
+  background-color: rgb(199, 199, 199);
   border-radius: 2em;
   border: darkblue;
   margin: 1em;
+  color: black;
   
 }
