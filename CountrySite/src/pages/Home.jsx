@@ -8,9 +8,11 @@ function Home() {
         return salvarNomePais ? JSON.parse(salvarNomePais) : 'Brazil';
     });
 
-    const [paisEspecifico, setPaisEspecifico] = useState(() => {
+
         const SalvarPais = window.localStorage.getItem('Pais Específico Salvo');
         return SalvarPais ? JSON.parse(SalvarPais) : [];
+
+
     });
 
     const [error, setError] = useState(null);
@@ -44,7 +46,11 @@ useEffect(() => {
 
             localStorage.setItem("Países", JSON.stringify(nomePaisEspecifico));
             
+
             localStorage.setItem("Pais Específico Salvo", JSON.stringify(paisEspecifico));
+
+            localStorage.setItem("Pais Específico Salvo", JSON.stringify(salvarPais));
+
 
             if (!respostaPaisEspecifico.ok) {
                 throw new Error("Viadão bem legalzão");
@@ -60,7 +66,9 @@ useEffect(() => {
     }
 
     PaisEspecificoEncontrar();
+
 }, [nomePaisEspecifico, paisEspecifico]);
+
 
 console.log("Pais especifico: ", paisEspecifico)
 
@@ -68,6 +76,7 @@ console.log(error)
 
 return (
     <>
+
         <p>API de países</p>
 
         <select
@@ -75,7 +84,9 @@ return (
                 setNomePaisEspecifico(e.target.value);
             }}
         >
+
             <option>Select One Country</option>
+
             {todosPaises.map((pais) => {
                 return (
                     <option key={pais.latlng} value={pais.name.official}>
@@ -92,7 +103,11 @@ return (
                         <h2>{dadosDosPaises.name.common}</h2>
                         <img src={dadosDosPaises.flags.png} alt={dadosDosPaises.name.common} />
 
-                    </div>
+                        <p>Capital: {dadosDosPaises.capital}</p>
+                        <p>População: {dadosDosPaises.population}</p>
+                        <p>continents: {dadosDosPaises.continents}</p>
+                        <p>Area: {dadosDosPaises.area}km²</p>
+       </div>
                 )
             })}
         </div>
