@@ -14,7 +14,9 @@ function PaginaTwo() {
                 <div key={dadosDosPaises.latlng}>
                     <h2>{dadosDosPaises.name.common}</h2>
                     <img src={dadosDosPaises.flags.png} alt={dadosDosPaises.name.common} />
-                    <p>Continente: {dadosDosPaises.continents}</p>
+                    <p>Continente: {dadosDosPaises.region}</p>
+                    <p>Subcontinente: {dadosDosPaises.subregion}</p>
+                    <p>Capital: {dadosDosPaises.capital}</p>
                 </div>
             )
         })}

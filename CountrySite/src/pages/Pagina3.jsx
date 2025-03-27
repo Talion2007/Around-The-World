@@ -13,8 +13,10 @@ function PaginaThree() {
             return (
                 <div key={dadosDosPaises.latlng}>
                     <h2>{dadosDosPaises.name.common}</h2>
-                    <img src={dadosDosPaises.flags.png} alt={dadosDosPaises.name.common} />
-                    <p> Capital: {dadosDosPaises.capital}</p>
+                    <img src={dadosDosPaises.coatOfArms.png} alt={dadosDosPaises.name.common} />
+                    <p>Status: {dadosDosPaises.status}</p>
+                    <p>Area: {dadosDosPaises.area} Km²</p>
+                    <p>População: {dadosDosPaises.population} Habitantes</p>
                 </div>
             )
         })}

@@ -67,6 +67,7 @@ nav{
 
 }
 img {
+  max-width: 25vw;
   transition: 4s;
   border-radius: 1em;
   max-width: 30vw;
